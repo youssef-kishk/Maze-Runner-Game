@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="1076.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OptionsPageController">
+   <children>
+      <ImageView fitHeight="645.0" fitWidth="1119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/backImage.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerImage" fitHeight="171.0" fitWidth="200.0" layoutX="484.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+      <ComboBox fx:id="choosePlayer" layoutX="453.0" layoutY="284.0" onAction="#playerChoising" prefHeight="39.0" prefWidth="205.0" promptText="Choose Player" />
+      <Button fx:id="startGame" layoutX="476.0" layoutY="552.0" mnemonicParsing="false" onAction="#startGameButtonAction" prefHeight="39.0" prefWidth="158.0" text="Start Game">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <ToggleButton fx:id="mediumGameButton" layoutX="456.0" layoutY="409.0" mnemonicParsing="false" onAction="#setMediumGame" prefHeight="59.0" prefWidth="198.0" style="-fx-background-color: transparent;" text="MEDIUM" textFill="#da0606">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </ToggleButton>
+      <ToggleButton fx:id="hardGameButton" layoutX="457.0" layoutY="468.0" mnemonicParsing="false" onAction="#setHardGame" prefHeight="59.0" prefWidth="198.0" style="-fx-background-color: transparent;" text="HARD" textFill="#da0606">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </ToggleButton>
+      <ToggleButton fx:id="easyGameButton" layoutX="456.0" layoutY="350.0" mnemonicParsing="false" onAction="#setEasyGame" prefHeight="59.0" prefWidth="198.0" style="-fx-background-color: transparent;" text="EASY" textFill="#da0606">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </ToggleButton>
+   </children>
+</Pane>
